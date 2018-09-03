@@ -26,6 +26,8 @@ Assumptions that I made:
 
 2. I assumed that there will be no duplicate names with the "Driver" keyword.
 
+3. I assumed that output can be displayed in console or terminal.
+
 # Problem Statement:
 
 Let's write some code to track driving history for people.
