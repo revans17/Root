@@ -4,7 +4,7 @@ My name is Ryan Evans. I am a current senior at George Mason University graduati
 
 # Set Up
 
-To run this code you need to have Java SE 7 installed. If you do not have it installed, you can download it from, https://java.com/en/download/help/download_options.xml. You do not need to any IDE installed on your machine, everthing can be run from terminal.
+To run this code you need to have Java SE 7 installed. If you do not have it installed, you can download it from, https://java.com/en/download/help/download_options.xml. You do not need to any IDE installed on your machine, everything can be run from terminal.
 
 # Commands Needed To Run
 
@@ -17,7 +17,7 @@ I have attached the test text file given in the assignment instructions, but fee
 
 # Solution Implementation
 
-When I first read this problem, I naturally thought of using three hashmaps becuase of the possiblity of duplication. Not only that, but of the fast insertion O(n) and lookup time O(n) the hashmap provides. Next, I thought of the possiblity of using Driver objects and creating an array of Trip objects inside the Driver class. I decided against that becuase the "Driver object" would only store a name and an array of trip objects. Also, the problem statement does not discuss scalablity for the application; so creating two different objects would be unnecessary. After I decided against both of those ideas, I decided to try using one main hashmap and using the name as the key for that hashmap. This will allow fast insertion and lookup. It will also deal with the possibility of duplicates.
+When I first read this problem, I naturally thought of using three HashMaps because of the possibility of duplication. Not only that, but of the fast insertion O(n) and lookup time O(n) the HashMap provides. Next, I thought of the possibility of using Driver objects and creating an array of Trip objects inside the Driver class. I decided against that because the "Driver object" would only store a name and an array of trip objects. Also, the problem statement does not discuss scalability for the application; so, creating two different objects would be unnecessary. After I decided against both of those ideas, I decided to try using one main HashMap and using the name as the key for that HashMap. This will allow fast insertion and lookup. It will also deal with the possibility of duplicates.
 
 # Assumptions
 
