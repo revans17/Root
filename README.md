@@ -13,7 +13,7 @@ I have attached the test text file given in the assignment instructions, but fee
 1. Download or clone the git repo to your computer.
 2. Drag the folder to terminal to open the directory.
 3. To compile the program run , `javac Driver_Processor.java`.
-4. To run the program with your own text file, `java Driver_Processor <text_file_name>`.
+4. To run the program with your own text file, `java Driver_Processor <text_file_name>` EX: `java Driver_Processor input.txt`.
 
 # Solution Implementation
 
