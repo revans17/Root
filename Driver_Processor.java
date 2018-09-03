@@ -1,7 +1,7 @@
 /**
 Simple application to track driving history for people.
 Application was tested with 5 different text files.
-     
+
 Name: Ryan Evans
 Date: 09/03/2018
 */
@@ -14,9 +14,13 @@ public class Driver_Processor{
      */
      static HashMap<String, ArrayList<String>> tripsMap = new HashMap<String, ArrayList<String>>();
      public static void main(String[] args) throws IOException{
+          if (args.length < 1) {
+               System.out.println("Proper syntax: java Driver_Processor <file_name>");
+          }
+          File file = new File(args[0]);
           try {
                //Reads the given file
-               readFile();
+               readFile(file);
                //Clears the map after completion
                tripsMap.clear();
 
@@ -29,8 +33,17 @@ public class Driver_Processor{
      Method that reads the file provided and inserts all items fro the text file in to the HashMap mentioned above.
      Method also calls all other methods below.
      */
-     public static void readFile() throws FileNotFoundException{
-          Scanner read = new Scanner(new File("input.txt"));
+     public static void readFile(File file) throws FileNotFoundException, IOException{
+          // if (args.length < 1) {
+          //      System.out.println("Proper syntax: java Driver_Processor <file_name>");
+          // }
+          // File file = new File(args[0]);
+          Scanner read = new Scanner(file);
+          //Scanner read = new Scanner(new File("input.txt"));
+          BufferedReader br = new BufferedReader(new FileReader(file));
+          if (br.readLine() == null) {
+               System.out.println("There are no Drivers or Trips in this file :)");
+          }
 
           while (read.hasNextLine()) {
                //Gets the first word in the text file line
@@ -73,6 +86,8 @@ public class Driver_Processor{
                     }
                     //Clears the list for easier calculation
                     driverList.clear();
+               }else{
+                    System.out.println("No drivers or trips entered.");
                }
           }
           //Prints the output
@@ -93,7 +108,7 @@ public class Driver_Processor{
                int mph = (int) Math.round(mil/min * 60);
                //Checks if it is over 100 or under 5 MPH
                if (mph < 5 || mph > 100) {
-                    return 0;
+                    return -1;
                }else{
                     return mph;
                }
@@ -142,10 +157,12 @@ public class Driver_Processor{
                Map.Entry<String, ArrayList<String>> entry = (Map.Entry<String, ArrayList<String>>)it.next();
                String[] driverInfo1 = treeMap.get(entry.getKey()).toArray(new String[treeMap.get(entry.getKey()).size()]);
                //Checks to see if the MPH was greater than 0 for output
-               if (calculateMPH(driverInfo1[1], driverInfo1[0]) != 0) {
+               if (calculateMPH(driverInfo1[1], driverInfo1[0]) > 0) {
                     System.out.println(driverInfo1[2] + ": " + (int)Math.round(Double.parseDouble(driverInfo1[1])) + " miles @ " + calculateMPH(driverInfo1[1], driverInfo1[0]) + " mph");
-              }else {
+              }else if (calculateMPH(driverInfo1[1], driverInfo1[0]) == 0) {
                    System.out.println(driverInfo1[2] + ": " + (int)Math.round(Double.parseDouble(driverInfo1[1])) + " miles");
+              }else {
+
               }
         }
    }
