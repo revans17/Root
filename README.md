@@ -1,4 +1,8 @@
-# Set UP
+# About Me 
+
+My name is Ryan Evans. I am a current senior at George Mason University graduating in the fall of 2018. I am studying Information Technology and concentrating in database and programming. While I am not a CS major, im going to try my best :).
+
+# Set Up
 
 To run this code you need to have Java SE 7 installed. If you do not have it installed, you can download it from, https://java.com/en/download/help/download_options.xml. You do not need to any IDE installed on your machine, everthing can be run from terminal.
 
