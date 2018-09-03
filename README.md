@@ -7,11 +7,8 @@ To run this code you need to have Java SE 7 installed. If you do not have it ins
 I have attached the test text file given in the assignment instructions, but feel free to use your own after looking at the assumptions section. 
 
 1. Download or clone the git repo to your computer.
-
 2. Drag the folder to terminal to open the directory.
-
 3. To compile the program run , `javac Driver_Processor.java`.
-
 4. To run the program with your own text file, `java Driver_Processor <text_file_name>`.
 
 # Solution Implementation
@@ -23,11 +20,8 @@ When I first read this problem, I naturally thought of using three hashmaps becu
 Assumptions that I made: 
 
 1. I assumed that there will not be any blank lines in the text file (before or after).
-
 2. I assumed that there will be no duplicate names with the "Driver" keyword.
-
 3. I assumed that output can be displayed in console or terminal.
-
 4. I assumed that a driver can be added from just a trip.
 
 # Testing
@@ -35,13 +29,9 @@ Assumptions that I made:
 Tests that were done on the program:
 
 1. Tests that the code will account for duplicate trips.
-
 2. Tests that the code will account for a driver with an average MPH of less than 5 MPH or greater than 10 MPH
-
 3. Tests that the code displays correctly with no drivers or trips entered.
-
 4. Tests that the code will add the miles if the driver has already taken a trip.
-
 5. Tests that the code will average the miles if a driver has taken more than one trip.
 
 # Problem Statement:
