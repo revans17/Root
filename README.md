@@ -1,6 +1,6 @@
 # About Me 
 
-My name is Ryan Evans. I am a current senior at George Mason University graduating in the fall of 2018. I am studying Information Technology and concentrating in database and programming. While I am not a CS major, im going to try my best :).
+My name is Ryan Evans. I am a current senior at George Mason University graduating in the fall of 2018. I am studying Information Technology and concentrating in database and programming. While I am not a CS major, im going to try my best :smile:.
 
 # Set Up
 
