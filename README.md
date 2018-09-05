@@ -33,7 +33,7 @@ Assumptions that I made:
 Tests that were done on the program:
 
 1. Tests that the code will account for duplicate trips.
-2. Tests that the code will account for a driver with an average MPH of less than 5 MPH or greater than 10 MPH
+2. Tests that the code will account for a driver with an average MPH of less than 5 MPH or greater than 100 MPH
 3. Tests that the code displays correctly with no drivers or trips entered.
 4. Tests that the code will add the miles if the driver has already taken a trip.
 5. Tests that the code will average the miles if a driver has taken more than one trip.
